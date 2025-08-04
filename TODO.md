@@ -16,7 +16,6 @@
   - [ ] draw floating menu with info about point-of-interest
 
 - Write templating logic (HTML/CSS/JS, Thymeleaf) to render the DB's data in the frontend
-  - [ ] 
 
 - Setup dummy git repo for laws
   (each law/public-document is a `.md` file)
