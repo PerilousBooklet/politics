@@ -6,15 +6,15 @@ A monitoring platform for managing politics.
 
 ## Features
 
-- ...
+TBA
 
 ## Install
 
-...
+WIP
 
 ## Build
 
-...
+WIP
 
 ## Development
 
