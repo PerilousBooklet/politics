@@ -8,13 +8,33 @@ A monitoring platform for managing politics.
 
 TBA
 
-## Install
+## Installation
 
-WIP
+/
 
 ## Build
 
-WIP
+### Dependencies
+
+- Java 17
+- Maven
+- Docker Compose
+
+### Setup
+
+Clone the repository on your system and `cd` into it.
+
+Start the DB (and its [Adminer](https://www.adminer.org/en/) interface) with `sudo docker-compose up -d`.
+
+Start the webapp with `./run.sh`
+
+The webapp is available at `http://localhost:8093`.
+
+The DB interface is available at `http://localhost:8079`.
+
+The username is `admin`.
+The password is `admin`.
+The DB name is `politics`.
 
 ## Development
 
