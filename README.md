@@ -8,6 +8,9 @@
 
 A monitoring platform for managing politics. 
 
+> [!NOTE]
+> This program is heavily WIP, not even in alpha state.
+
 ## Features
 
 TBA
