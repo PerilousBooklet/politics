@@ -1,0 +1,312 @@
+@charset "UTF-8";
+
+/*
+One Dark Pro theme for Adminer by George Bereveskos - Hellas Dev
+Based on the Atom One Dark Pro color scheme
+@version 1.1 (Feb 2025)
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&display=swap');
+* {
+  box-sizing: border-box;
+  transition: box-shadow 0.1s;
+  font-size: 1rem;
+}
+* :focus {
+  box-shadow: 0 0 0 2px rgba(97, 175, 239, 0.6);
+  outline: none;
+}
+
+::selection {
+  background-color: rgba(97, 175, 239, 0.3);
+}
+
+@font-face {
+  font-family: 'JetBrains Mono Nerd Font';
+  src: local('JetBrains Mono Nerd Font');
+}
+
+body {
+  background-color: #282c34;
+  font-family: 'JetBrains Mono', monospace;
+  text-rendering: optimizeLegibility;
+  color: #abb2bf;
+}
+
+a {
+  color: #61afef;
+  padding: 3px;
+}
+a:visited {
+  color: #61afef;
+}
+a:hover {
+  color: #98c379 !important;
+}
+a.active {
+  text-decoration: underline;
+  color: #61afef;
+  font-weight: normal;
+}
+
+h1,
+h2,
+#tables a {
+  background-color: inherit;
+  border-bottom: none;
+  color: #e06c75;
+  font-size: 1.2rem;
+}
+
+.version,
+span.time {
+  color: #98c379;
+}
+
+#h1 {
+  color: #c678dd;
+  font-weight: bold;
+  font-style: normal;
+  font-size: 1.4em;
+}
+
+.select {
+  opacity: 0.6;
+}
+
+#menu .links {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+  gap: 5px;
+  align-items: center;
+}
+
+#tables {
+  border-bottom: none;
+}
+#tables li {
+  padding: 2px 0;
+}
+#tables li a:hover + a {
+  text-decoration: underline;
+}
+
+#content {
+  margin-left: 20em;
+  font-size: 1.1em;
+}
+
+#breadcrumb {
+  top: 0.8em;
+  left: 20em;
+  background-color: inherit;
+}
+
+th,
+td,
+fieldset,
+.table,
+.error,
+.message {
+  background-color: #21252b !important;
+  border: 1px solid #3e4451 !important;
+  cursor: default;
+  padding: 12px;
+}
+
+.table .char {
+  color: #98c379;
+}
+.table .date {
+  color: #e5c07b;
+}
+.table .enum {
+  color: #56b6c2;
+}
+.table .binary {
+  color: #e06c75;
+}
+
+input[type='submit'],
+button {
+  cursor: pointer;
+  transition: background-color 0.1s;
+}
+input[type='submit']:hover,
+button:hover {
+  background-color: #291f18;
+}
+input[type='submit'].default,
+button.default {
+  box-shadow: inherit !important;
+}
+
+select,
+input:not(.icon):not([type='checkbox']):not([type='radio']),
+textarea,
+pre[contenteditable] {
+  padding: 6px 20px;
+  background-color: #21252b;
+  color: #abb2bf;
+  border: 1px solid #4b5263 !important;
+  border-radius: 10px;
+  font-size: 1.1rem;
+}
+
+select,
+input:not(.icon):not([type='checkbox']):not([type='radio']) {
+  height: 2em;
+}
+
+select {
+  vertical-align: middle;
+}
+
+input.icon {
+  background-color: #1d1611;
+  border-radius: 10px;
+  filter: sepia(1) saturate(5) brightness(0.8);
+}
+input.icon:hover {
+  filter: sepia(1) saturate(5) brightness(1);
+}
+
+input[type='number'] {
+  min-width: 4em;
+}
+
+code {
+  background: #21252b;
+  font-size: 1.1em;
+}
+
+.jush {
+  color: #abb2bf;
+}
+.jush a,
+.jush .jush-op {
+  color: #61afef;
+}
+.jush .jush-help,
+.jush .jush-js_key {
+  color: #98c379;
+}
+.jush .jush-quo {
+  color: #98c379;
+}
+.jush .jush-bac {
+  color: #d19a66;
+}
+.jush .jush-op {
+  color: #c678dd;
+}
+
+.message {
+  color: #b9e63f;
+}
+
+#menu .message {
+  border: none !important;
+  background: inherit !important;
+}
+
+.footer {
+  border: none;
+  background-color: #282c34;
+  padding-top: 1rem;
+}
+.footer div {
+  background: inherit;
+}
+
+#logins {
+  border-bottom: none;
+}
+#logins a {
+  background-color: inherit;
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  width: 12px;
+  height: 12px;
+}
+
+::-webkit-scrollbar-button {
+  width: 0px;
+  height: 0px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #4b5263;
+  border: 0px none #eeb25f;
+  border-radius: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #282c34;
+  border: 0px none #eeb25f;
+  border-radius: 6px;
+}
+
+::-webkit-scrollbar-corner {
+  background: transparent;
+}
+
+input[type='checkbox'],
+input[type='radio'] {
+  -webkit-appearance: none;
+  appearance: none;
+  background-color: #1d1611;
+  margin: 0 0.2em;
+  font: inherit;
+  width: 1.2em;
+  height: 1.2em;
+  border: 1px solid #61afef;
+  border-radius: 5px;
+  display: inline-grid;
+  place-items: center;
+}
+input[type='checkbox']:checked::before,
+input[type='radio']:checked::before {
+  content: ' ';
+  height: 0.55em;
+  width: 0.55em;
+  background-color: #eeb25f;
+  border-radius: 1em;
+}
+input[type='checkbox']:disabled,
+input[type='radio']:disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+
+input[type='checkbox']:checked {
+  background-color: #61afef;
+}
+input[type='checkbox']:checked::before {
+  width: 0.65em;
+  height: 0.65em;
+  transform-origin: bottom left;
+  background-color: #1d1611;
+  clip-path: polygon(39% 65%, 76% 10%, 95% 24%, 46% 97%, 5% 67%, 18% 49%);
+}
+
+input[type='radio'] {
+  border-radius: 10rem;
+}
+
+.js .checkable .checked td,
+.js .checkable .checked th {
+  background-color: #2d221a !important;
+}
+.js .column {
+  background: #1d1611;
+  outline: 1px solid #eeb25f;
+}
+
+#help {
+  background-color: #1d1611;
+  border: 1px solid #eeb25f;
+  border-radius: 2px;
+}

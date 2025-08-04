@@ -1,0 +1,79 @@
+* {
+  box-sizing: border-box;
+  font: Cantarell;
+}
+
+
+body {
+  font-family: Cantarell;
+  margin: 0;
+  background: #282c34;
+}
+
+
+a {
+  color: #5cb3fa;
+  text-decoration: none;
+}
+a:visited { color: #FFFFFF; }
+a:hover { color: #eb6772; }
+a:active { color: #9acc76; }
+blockquote {
+  font-style: italic;
+  margin: 1em 0;
+  padding-left: 20px;
+  border-left: 2px solid #ccc;
+}
+
+
+.navbar {
+  top: 0;
+  position: sticky;
+  position: -webkit-sticky;
+  overflow: hidden;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  background-color: #21252B;
+  z-index: 10;
+}
+.navbar a {
+  display: inline-block;
+  color: #FFFFFF;
+  padding: 14px 20px;
+}
+.navbar a:hover {
+  background-color: #282c34;
+  color: #FFFFFF;
+}
+.navbar a.active {
+  background-color: #282c34;
+  color: #FFFFFF;
+}
+
+
+.svg-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+/* Style inline SVG elements */
+.svg-container svg {
+    transition: transform 0.3s ease;
+}
+
+.svg-container svg:hover {
+    transform: scale(1.1);
+}
+
+/* Style SVG paths for inline SVGs */
+.svg-container svg path {
+    fill: #333;
+    transition: fill 0.3s ease;
+}
+
+.svg-container:hover svg path {
+    fill: #007bff;
+}

@@ -1,0 +1,14 @@
+# Intellij
+/.idea
+
+# JDTLS
+/.jdtls
+/src/.settings
+/src/.classpath
+/src/.project
+
+# PostgreSQL
+/.db
+
+# Build
+/src/target

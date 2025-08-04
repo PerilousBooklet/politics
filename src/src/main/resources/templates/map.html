@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  
+  <div th:insert="~{fragments::header}"></div>
+  
+  <body>
+    
+    <!-- NAVBAR -->
+    <div class="navbar">
+      <a href="/">Home</a>
+      <a href="/laws">Laws</a>
+      <a href="/map" class="active">Map</a>
+    </div>
+    
+    <!-- CONTENT -->
+    <div style="display: flex; justify-content: center; color: white;">
+      
+      <div class="svg-container" style="padding: 20px;">
+        <img th:src="@{/assets/map.svg}" alt="My Icon" width="860" height="860">
+      </div>
+      
+    </div>
+    
+  </body>
+  
+</html>
