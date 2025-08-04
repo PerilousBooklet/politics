@@ -1,6 +1,10 @@
 # Politics
 
-<!-- TODO: screenshot -->
+<img width="1568" height="968" alt="sc1" src="https://github.com/user-attachments/assets/b66d692e-357a-4fc4-b915-a59dbf81129e" />
+
+<img width="1797" height="944" alt="sc2" src="https://github.com/user-attachments/assets/b284ac21-7fb9-4364-9928-083410b03566" />
+
+<img width="1532" height="967" alt="sc3" src="https://github.com/user-attachments/assets/68c1b6e8-9e11-4b12-9b52-553358e49daf" />
 
 A monitoring platform for managing politics. 
 
