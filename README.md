@@ -42,6 +42,6 @@ The DB name is `politics`.
 
 ## Resources
 
-- https://freesvgicons.com/search?q=politics (handshake.svg)
+- [handshake.svg](https://freesvgicons.com/search?q=politics)
 - https://commons.wikimedia.org/wiki/Category:SVG_maps_of_Italy
 
